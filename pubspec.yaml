@@ -1,0 +1,47 @@
+name: capstoneproject
+description: "A mobile application for detecting Indicators of Compromise."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  installed_apps: ">=1.0.0 <3.0.0"
+  drift: ^2.21.0
+  path_provider: ^2.1.4
+  path: ^1.9.0
+  http: ^1.2.2
+  csv: ^6.0.0
+  sqlite3_flutter_libs: ^0.5.24
+  permission_handler: ^12.0.1
+  connectivity_plus: ^7.0.0
+  package_info_plus: ^9.0.0
+  network_info_plus: ^7.0.0
+  flutter_local_notifications: ^19.4.2
+  shared_preferences: ^2.2.2
+  google_generative_ai: ^0.2.2
+  flutter_dotenv: ^5.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.13
+  drift_dev: ^2.21.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env  # ✅ This line declares your environment file so flutter_dotenv can load it
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/app_icon.png"
